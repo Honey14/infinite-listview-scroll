@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:english_words/english_words.dart';
+import 'package:infinite_listview_scroll/DifferentRandomWords.dart';
 
 void main() => runApp(Home());
 
@@ -16,7 +17,7 @@ class Home extends StatelessWidget {
           title: const Text("HomePage"),
         ),
         body: Center(
-          child: Text(wordPair.asPascalCase),
+          child: DifferentRandomWords(),
         ),
       ),
     );
